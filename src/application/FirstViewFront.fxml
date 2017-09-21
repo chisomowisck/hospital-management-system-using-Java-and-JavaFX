@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootpane" prefHeight="520.0" prefWidth="1020.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FirstViewController">
+   <children>
+      <JFXButton fx:id="logid" layoutX="5.0" layoutY="236.0" onAction="#loginButton" opacity="0.5" prefHeight="62.0" prefWidth="178.0" style="-fx-background-color: #0000CD;" text="Admin Access" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="5.0" layoutY="166.0" onAction="#registration" opacity="0.5" prefHeight="62.0" prefWidth="178.0" style="-fx-background-color: #0000CD;" text="Registration" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="listid" layoutX="5.0" layoutY="94.0" onAction="#listhundle" opacity="0.5" prefHeight="62.0" prefWidth="178.0" style="-fx-background-color: #0000CD;" text="List of appointments" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="562.0" fitWidth="834.0" layoutX="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../em2.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

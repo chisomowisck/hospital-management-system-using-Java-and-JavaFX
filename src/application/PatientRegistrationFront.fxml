@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="childpane" prefHeight="520.0" prefWidth="1016.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PatientRegistrationController">
+   <children>
+      <JFXButton fx:id="backid" layoutX="14.0" layoutY="14.0" onAction="#backhundle" opacity="0.5" style="-fx-background-color: #0000CD;" text="GoBack" textFill="WHITE" />
+      <Label layoutX="170.0" layoutY="22.0" prefHeight="46.0" prefWidth="280.0" text="Patient Registration" textFill="#3b5bc6" underline="true">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="nameBox" layoutX="44.0" layoutY="114.0" prefHeight="25.0" prefWidth="175.0" promptText="First Name" />
+      <JFXTextField fx:id="lastNameBox" layoutX="43.0" layoutY="179.0" prefHeight="25.0" prefWidth="175.0" promptText="Last Name" />
+      <JFXTextField fx:id="phoneBox" layoutX="44.0" layoutY="262.0" prefHeight="25.0" prefWidth="175.0" promptText="Phone number" />
+      <JFXTextField fx:id="ageBox" layoutX="44.0" layoutY="339.0" prefHeight="25.0" prefWidth="175.0" promptText="age" />
+      <JFXButton fx:id="registerid" layoutX="266.0" layoutY="390.0" onAction="#registerButton" opacity="0.5" style="-fx-background-color: #0000CD;" text="Register" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="registerBox" layoutX="212.0" layoutY="448.0" prefHeight="33.0" prefWidth="280.0" textFill="#eb2d2d">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="DateBox" layoutX="396.0" layoutY="302.0" />
+      <ImageView fitHeight="366.0" fitWidth="422.0" layoutX="628.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../cc.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="436.0" layoutY="97.0" text="type of illness" />
+      <JFXRadioButton fx:id="dental" layoutX="420.0" layoutY="139.0" text="Dental">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="illness" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="ent" layoutX="421.0" layoutY="169.0" text="Ear,nose and throat" toggleGroup="$illness">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="cardiology" layoutX="419.0" layoutY="204.0" text="Cardiology" toggleGroup="$illness">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXRadioButton>
+   </children>
+</AnchorPane>
